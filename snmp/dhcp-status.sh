@@ -3,14 +3,14 @@
 # copy this script to somewhere like /opt and make chmod +x it #
 # edit your snmpd.conf add the below line and restart snmpd    #
 # extend dhcpstats /opt/dhcp-status.sh                         #
-################################################################ 
+################################################################
 FILE_DHCP='/var/lib/dhcp/db/dhcpd.leases'
-BIN_CAT='/usr/bin/cat'
-BIN_GREP='/usr/bin/grep'
-BIN_TR='/usr/bin/tr'
-BIN_SED='/usr/bin/sed'
-BIN_SORT='/usr/bin/sort'
-BIN_WC='/usr/bin/wc'
+BIN_CAT='/usr/bin/env cat'
+BIN_GREP='/usr/bin/env grep'
+BIN_TR='/usr/bin/env tr'
+BIN_SED='/usr/bin/env sed'
+BIN_SORT='/usr/bin/env sort'
+BIN_WC='/usr/bin/env wc'
 DHCP_LEASES='^lease'
 DHCP_ACTIVE='^lease|binding state active'
 DHCP_EXPIRED='^lease|binding state expired'
